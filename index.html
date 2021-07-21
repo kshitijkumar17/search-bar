@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google Search</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="hero">
+            <div id="searchBox">
+                <img src="google.png" id="googleIcon">
+                <input type="text" placeholder="Search Google or type a URL">
+                <img src="microphone.png" class="mic-icon">
+            </div>
+        </div>
+        <script>
+            var searchBox = document.getElementById("searchBox");
+            var googleIcon = document.getElementById("googleIcon");
+            googleIcon.onclick = function() {
+                searchBox.classList.toggle("active");
+            }
+        </script>
+    </body>
+</html>
